@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cake Shop - Mobile</title>
+    <style>
+        /* CSS অংশ: ডিজাইন সুন্দর করার জন্য */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5f8; /* হালকা গোলাপি ব্যাকগ্রাউন্ড */
+            color: #333;
+        }
+
+        header {
+            background-color: #ff8fab;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            padding: 15px;
+        }
+
+        .cake-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* ফোনে একটার নিচে একটা দেখাবে */
+            gap: 20px;
+        }
+
+        .cake-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .cake-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .cake-card h3 {
+            margin: 10px 0 5px;
+            color: #d81b60;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .order-btn {
+            background-color: #ff8fab;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍰 আমার কেক শপ</h1>
+</header>
+
+<div class="container">
+    <div class="cake-grid">
+        
+        <div class="cake-card">
+            <img src="https://via.placeholder.com/400x300?text=Chocolate+Cake" alt="Cake 1">
+            <h3>চকলেট ডিলক্স</h3>
+            <p class="price">৳ ১২০০</p>
+            <a href="tel:01700000000" class="order-btn">অর্ডার করতে কল দিন</a>
+        </div>
+
+        <div class="cake-card">
+            <img src="https://via.placeholder.com/400x300?text=Vanilla+Cake" alt="Cake 2">
+            <h3>ভ্যানিলা ড্রিম</h3>
+            <p class="price">৳ ৯০০</p>
+            <a href="tel:01700000000" class="order-btn">অর্ডার করতে কল দিন</a>
+        </div>
+
+        <div class="cake-card">
+            <img src="https://via.placeholder.com/400x300?text=Red+Velvet" alt="Cake 3">
+            <h3>রেড ভেলভেট</h3>
+            <p class="price">৳ ১৫০০</p>
+            <a href="tel:01700000000" class="order-btn">অর্ডার করতে কল দিন</a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; ২০২৪ - কেক শপ ডিরেক্টরি</p>
+</footer>
+
+</body>
+</html>
